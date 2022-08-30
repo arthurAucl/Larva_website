@@ -1,0 +1,41 @@
+.video-block-left {
+    font-family: "Arial";
+    color: white;
+    flex: 1;
+    text-align: center;
+    background-color: #d7744a;
+    position: fixed;
+    border-radius: 10px 10px 10px 10px;
+    padding: 25px;
+    margin-right: 70%;
+    margin-left: 4%;
+    margin-top: 75px;
+}
+
+.video-block-midle {
+    font-family: "Arial";
+    color: white;
+    flex: 1;
+    text-align: center;
+    background-color: #d7744a;
+    position: fixed;
+    border-radius: 10px 10px 10px 10px;
+    padding: 25px;
+    margin-right: 30%;
+    margin-left: 37%;
+    margin-top: 75px;
+}
+
+.video-block-right {
+    font-family: "Arial";
+    color: white;
+    flex: 1;
+    text-align: center;
+    background-color: #d7744a;
+    position: fixed;
+    border-radius: 10px 10px 10px 10px;
+    padding: 25px;
+    margin-right: 4%;
+    margin-left: 70%;
+    margin-top: 75px;
+}
