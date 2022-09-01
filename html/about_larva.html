@@ -20,31 +20,92 @@
 
 </head>
 
-<body class="degrade-angulaire">
-    <h1 class="test"> About Larva </h1>
-    <h2 class="head-block"> Larva Featured on InfoQ </h2>
-    <div class="flex-runtime">
-        <h3>Runtime Verification</h3>
-        <p>Robustness and reliability are key factors in the success of the deployment of security-critical systems. Testing, fails to address these concerns adequately since not all possible execution paths are covered. On the other hand, verification -
-            the analysis of all execution paths - is usually unfeasible due to the large state space of such systems. Runtime-verification addresses the issue by enabling formal verification of the system during its execution. An adequate logic and language
-            to express typical security properties is a prerequisite to enable runtime verification.</p>
-    </div>
-    <div class="flex-larva">
-        <h3>LARVA</h3>
-        <p>LARVA is a runtime verification platform for runtime verification of critical systems. A language was specifically designed to allow a user to specify the security properties of a JAVA software system. Once these are specified in a text file,
-            the compiler generates the necessary code in JAVA and AspectJ which verifies that the properties in the script are being adhered to during the execution of the system. The advantage of taking this approach is that the monitoring is done without
-            changing any code in the system being monitored.</p>
-    </div>
-    <div class="flex-centralisation">
-        <h3>Centralisation</h3>
-        <p>Security properties can be specified separately in one central location and outside of the system code with the possibility of easily turning on or off this extra checking.</p>
-    </div>
-    <div class="flex-different-uses">
-        <h3>Different uses</h3>
-        <p>LARVA use can either be limited during the testing phase or else it can be used also after deployment. The latter has the advantage of reassuring that under no circumstance will any of the security properties be violated. However, this also has
-            the disadvantage of adding extra overhead to the system.</p>
+<body>
+    <h1> About Larva </h1>
+    <div class="summary">
+        <a class="first-row" href="#Larva Featured on InfoQ">Larva Featured on InfoQ</a>
+        <a class="second-row" href="#Runtime Verification"> Runtime Verification</a>
+        <a class="second-row" href="#Larva"> Larva</a>
+        <a class="third-row" href="#Centralisation"> Centralisation</a>
+        <a class="third-row" href="#Different uses"> Different uses</a>
+        <a class="third-row" href="#Simplicity">  Simplicity</a>
+        <a class="third-row" href="#Visualisation"> Visualisation</a>
+        <a class="third-row" href="#Real-Time"> Real-Time</a>
+        <a class="second-row" href="#Future Directions"> Future Directions</a>
+        <!-- <a class="second-row" href="#Introduction to Aspect-Oriented"> Aspect-Oriented</a>
+        <a class="second-row" href="#Literature Review of Runtime Verification"> Review Runtime Verification</a>
+        <a class="second-row" href="#Runtime Monitoring"> Runtime Monitoring</a> -->
     </div>
 
+    <div class="global-block">
+        <h2 id="Larva Featured on InfoQ"> Larva Featured on InfoQ </h2>
+
+        <div class="block" id="Runtime Verification">
+            <h3>Runtime Verification</h3>
+            <p>Robustness and reliability are key factors in the success of the deployment of security-critical systems. Testing, fails to address these concerns adequately since not all possible execution paths are covered. On the other hand, verification
+                - the analysis of all execution paths - is usually unfeasible due to the large state space of such systems. Runtime-verification addresses the issue by enabling formal verification of the system during its execution. An adequate logic
+                and language to express typical security properties is a prerequisite to enable runtime verification.</p>
+        </div>
+
+        <div class="block" id="Larva">
+            <h3>Larva</h3>
+            <p>LARVA is a runtime verification platform for runtime verification of critical systems. A language was specifically designed to allow a user to specify the security properties of a JAVA software system. Once these are specified in a text file,
+                the compiler generates the necessary code in JAVA and AspectJ which verifies that the properties in the script are being adhered to during the execution of the system. The advantage of taking this approach is that the monitoring is done
+                without changing any code in the system being monitored.</p>
+
+
+            <div class="little-block" id="Centralisation">
+                <h4>Centralisation:</h4>
+                <p>Security properties can be specified separately in one central location and outside of the system code with the possibility of easily turning on or off this extra checking.</p>
+            </div>
+
+            <div class="little-block" id="Different uses">
+                <h4>Different uses:</h4>
+                <p>LARVA use can either be limited during the testing phase or else it can be used also after deployment. The latter has the advantage of reassuring that under no circumstance will any of the security properties be violated. However, this
+                    also has the disadvantage of adding extra overhead to the system.</p>
+            </div>
+
+            <div class="little-block" id="Simplicity">
+                <h4>Simplicity:</h4>
+                <p>Another appealing feature of the language is that it was kept as simple as possible to make it as easy as possible to use. In fact the logic of the language is equivalent to a state-machine with local variables and some other features.</p>
+            </div>
+
+            <div class="little-block" id="Visualisation">
+                <h4>Visualisation:</h4>
+                <p>The compiler uses a graphics program to generate the state-machine equivalent of the logic in the script. Therefore, the user has the advantage of visualizing the logic written.</p>
+            </div>
+
+            <div class="little-block" id="Real-Time">
+                <h4>Real-Time:</h4>
+                <p>The LARVA language allows the user to use real-time clocks in the specification. These can be used to trigger events and measure the time elapsed between events. This can be very useful to describe numerous interesting properties. For
+                    example no more than 3 bad logins should be allowed with 10 minutes.</p>
+            </div>
+        </div>
+
+        <div class="block" id="Future Directions">
+            <h3>Future Directions</h3>
+            <p>In the near future we intend to analyse the extent of the overhead created upon the system being monitored. One approach to this issue is to give guarantees as the upperbound of the overhead. Alternatively, we can run the monitoring system
+                on a separate machine so that the monitored system will not be affected. However, this approach will raise synchronisation issues because the monitoring system may not be able to keep up with the monitored system.</p>
+        </div>
+
+        <!--   <div class="block" id="Introduction to Aspect-Oriented">
+            <h3>Introduction to Aspect-Oriented Programming as a Tool for Runtime Verification</h3>
+            <p>In [1], we have given some examples to illustrate the appropriateness of using aspect-oriented programming. The most appealing contribution of aspect-oriented programming is the fact the monitoring code is automatically injected in the code
+                without the need of manual intervention.</p>
+        </div>
+
+        <div class="block" id="Literature Review of Runtime Verification">
+            <h3>Literature Review of Runtime Verification and Proposed Work</h3>
+            <p>In [2], we have gone through major works in the area of runtime verification, highlighting examples and technologies which will be useful for our proposed work. The paper ends with a concrete proposal for creating a runtime verification tool
+                (LARVA) and employing it in an appropriate case-study.</p>
+        </div>
+
+        <div class="block" id="Runtime Monitoring">
+            <h3>Dynamic Event-Based Runtime Monitoring of Real-Time and Contextual Properties</h3>
+            <p>In [3], we give the mathematical background of the runtime verification system LARVA. In addition, we give account of a case-study carried out on a transaction system. Finally, LARVA is compared to other prominent tools in the area of runtime
+                verification through a benchmark.</p>
+        </div> -->
+    </div>
 </body>
 
 </html>

@@ -1,69 +1,78 @@
-.test {
+body h1 {
+    position: fixed;
+}
+
+.first-row {
+    margin-left: 5px;
+    color: gray;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.second-row {
+    margin-left: 20px;
+    color: gray;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.third-row {
+    margin-left: 40px;
+    color: gray;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.global-block {
+    background-color: #efeef0;
     margin-top: 75px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 200px;
+    padding: 10px;
+    flex: 5%;
 }
 
-.head-block {
-    background-color: rgb(44, 44, 176);
+.summary {
+    flex: 20%;
+    margin-top: 75px;
+    margin-right: 20px;
+    margin-left: 10px;
+    background-color: #efeef0;
     position: fixed;
     border-radius: 10px;
-    margin-right: 10%;
-    margin-left: 20%;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: grid;
 }
 
-.flex-runtime {
+.block {
     font-family: "Arial";
     color: white;
-    flex: 1;
     text-align: left;
     background-color: #784fb0;
-    position: fixed;
     border-radius: 10px;
     padding: 15px;
-    margin-right: 10%;
-    margin-left: 20%;
-    margin-top: 50px;
+    margin-bottom: 15px;
 }
 
-.flex-larva {
+.little-block {
     font-family: "Arial";
     color: white;
-    flex: 1;
     text-align: left;
     background-color: #784fb0;
-    position: fixed;
-    border-radius: 10px;
-    padding: 15px;
-    margin-right: 10%;
-    margin-left: 20%;
-    margin-top: 250px;
+    padding-left: 30px;
 }
 
-.flex-centralisation {
-    font-family: "Arial";
-    color: white;
-    flex: 1;
-    text-align: left;
-    background-color: #784fb0;
-    position: fixed;
-    border-radius: 10px;
-    padding: 15px;
-    margin-right: 10%;
-    margin-left: 20%;
-    margin-top: 432px;
+div h4 {
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
-.flex-different-uses {
-    font-family: "Arial";
-    color: white;
-    flex: 1;
-    text-align: left;
-    background-color: #784fb0;
-    position: fixed;
-    border-radius: 10px;
-    padding: 15px;
-    margin-right: 10%;
-    margin-left: 20%;
-    margin-top: 550px;
+@media screen and (max-width:680px) {
+    /*a modifier pour faire une petite page cacher*/
+    .summary {
+        flex: 0%;
+    }
+    .global-block {
+        margin-left: 20px;
+    }
 }

@@ -11,8 +11,10 @@ ul {
 }
 
 li a {
+    cursor: pointer;
     display: block;
     color: white;
+    flex-wrap: wrap;
     text-align: center;
     margin-top: 6px;
     padding: 12px 16px;
@@ -40,39 +42,109 @@ li img {
 }
 
 .flex-container {
-    display: flex;
+    /* display: flex; */
     padding: 50px;
 }
 
 .tutorial-button {
+    cursor: pointer;
     width: 320px;
     height: 500px;
-    position: fixed;
+    /* position: fixed; */
     margin-right: 70%;
     margin-left: 4%;
     margin-top: 200px;
 }
 
 .video-button {
+    cursor: pointer;
     width: 320px;
     height: 500px;
-    position: fixed;
+    /* position: fixed; */
     margin-right: 30%;
     margin-left: 37%;
     margin-top: 100px;
 }
 
 .larva-button {
+    cursor: pointer;
     width: 320px;
     height: 500px;
-    position: fixed;
+    /* position: fixed; */
     margin-right: 4%;
     margin-left: 70%;
     margin-top: 150px;
 }
 
-.degrade-angulaire {
-    background: linear-gradient(70deg, blue, pink);
-    width: all;
-    height: all;
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #e5e5e5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #615dfa;
+    border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #b5076b;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 7px solid #6f6f6f;
+    background-color: #615dfa;
+    color: white;
+    padding: 5px 100px;
+}
+
+footer h1 {
+    border-bottom: 1px solid white;
+}
+
+footer a {
+    font-size: small;
+    padding-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    display: grid;
+}
+
+footer .contact {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Gordon-J-Pace {
+    text-align: left;
+    float: left;
+    margin-left: 50px;
+    flex: 10%;
+}
+
+.Christian-Colombo {
+    text-align: right;
+    float: right;
+    margin-right: 50px;
+    flex: 10%;
+}
+
+@media screen and (max-width:680px) {
+    li a {
+        cursor: pointer;
+        display: block;
+        color: white;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 14px;
+        padding: 5px;
+        text-decoration: none;
+        font-family: "Arial";
+        font-weight: bold;
+        font-size: 14px;
+    }
 }
