@@ -1,0 +1,82 @@
+.test {
+    margin-top: 75px;
+    font-family: "Arial";
+    text-decoration: underline;
+    color: rgb(28, 14, 110);
+    margin-left: 10%;
+}
+
+.head-block {
+    font-family: "Arial";
+    
+    color: rgb(28, 14, 110);
+    border-radius: 10px;
+    margin-right: 5%;
+    margin-left:10%;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.flex-AspectJ {
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    flex: 1;
+    text-align: left;
+    background-color: #efeef0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.head-block2 {
+    font-family: "Arial";
+    
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-right: 5%;
+    margin-left:10%;
+    margin-top: 100px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.flex-compiler {
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    flex: 1;
+    text-align: left;
+    background-color: #efeef0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.flex-centralisation {
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    flex: 1;
+    text-align: left;
+    background-color: #784fb0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 432px;
+}
+
+.flex-different-uses {
+    font-family: "Arial";
+    color: white;
+    flex: 1;
+    text-align: left;
+    background-color: #784fb0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 580px;
+}
