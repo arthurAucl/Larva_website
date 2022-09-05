@@ -46,34 +46,18 @@ li img {
     padding: 50px;
 }
 
-.tutorial-button {
+.block-button {
+    display: flex;
+}
+
+.button {
     cursor: pointer;
     width: 320px;
     height: 500px;
-    /* position: fixed; */
-    margin-right: 70%;
-    margin-left: 4%;
+    flex: 33%;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 200px;
-}
-
-.video-button {
-    cursor: pointer;
-    width: 320px;
-    height: 500px;
-    /* position: fixed; */
-    margin-right: 30%;
-    margin-left: 37%;
-    margin-top: 100px;
-}
-
-.larva-button {
-    cursor: pointer;
-    width: 320px;
-    height: 500px;
-    /* position: fixed; */
-    margin-right: 4%;
-    margin-left: 70%;
-    margin-top: 150px;
 }
 
 body::-webkit-scrollbar {
