@@ -5,14 +5,25 @@
     color: rgb(28, 14, 110);
     margin-left: 10%;
 }
-
+.summary {
+    font-family: "Arial";
+    color: rgb(28, 14, 110);
+    border-radius: 10px;
+    position: fixed;
+    margin-right: 5%;
+    margin-left:1%;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 100px;
+}
 .head-block {
     font-family: "Arial";
     
     color: rgb(28, 14, 110);
     border-radius: 10px;
     margin-right: 5%;
-    margin-left:10%;
+    margin-left:12.5%;
     margin-top: 50px;
     padding-left: 10px;
     padding-right: 0px;
@@ -23,12 +34,26 @@
     color: rgb(0, 0, 0);
     flex: 1;
     text-align: left;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    padding-right: 10%;
+    margin-right: 0%;
+    margin-left: 15%;
+    margin-top: 25px;
+}
+
+.flex-AspectJ2 {
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    flex: 1;
+    text-align: left;
     background-color: #efeef0;
     border-radius: 10px;
     padding: 15px;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 20px;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 25px;
 }
 .head-block2 {
     font-family: "Arial";
@@ -36,7 +61,7 @@
     color: rgb(0, 0, 0);
     border-radius: 10px;
     margin-right: 5%;
-    margin-left:10%;
+    margin-left:12.5%;
     margin-top: 100px;
     padding-left: 10px;
     padding-right: 0px;
@@ -47,11 +72,72 @@
     color: rgb(0, 0, 0);
     flex: 1;
     text-align: left;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10%;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+.flex-compiler2 {
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    flex: 1;
+    text-align: left;
     background-color: #efeef0;
     border-radius: 10px;
     padding: 15px;
     margin-right: 10%;
-    margin-left: 10%;
+    margin-left: 0%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.flex-compiler3 {
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    flex: 1;
+    text-align: left;
+    background-color: #efeef0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10%;
+    margin-left: 0%;
+    margin-top: 0px;
+}
+.flex-compiler4 {
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    flex: 1;
+    text-align: left;
+    background-color: #efeef0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10%;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+.flex-compiler5 {
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    flex: 1;
+    text-align: left;
+    background-color: #efeef0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10%;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+.flex-compiler6 {
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    flex: 1;
+    text-align: left;
+    background-color: #efeef0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10%;
+    margin-left: 15%;
     margin-top: 50px;
 }
 
