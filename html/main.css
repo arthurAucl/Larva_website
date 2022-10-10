@@ -8,6 +8,7 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 li a {
@@ -41,39 +42,14 @@ li img {
     float: right;
 }
 
-.flex-container {
-    /* display: flex; */
-    padding: 50px;
-}
-
-.tutorial-button {
+.button {
     cursor: pointer;
-    width: 320px;
-    height: 500px;
-    /* position: fixed; */
-    margin-right: 70%;
-    margin-left: 4%;
-    margin-top: 200px;
-}
-
-.video-button {
-    cursor: pointer;
-    width: 320px;
-    height: 500px;
-    /* position: fixed; */
-    margin-right: 30%;
-    margin-left: 37%;
+    border: none;
+    background-color: white;
+    align-items: center;
     margin-top: 100px;
-}
-
-.larva-button {
-    cursor: pointer;
-    width: 320px;
-    height: 500px;
-    /* position: fixed; */
-    margin-right: 4%;
-    margin-left: 70%;
-    margin-top: 150px;
+    margin-right: 125px;
+    margin-left: 125px;
 }
 
 body::-webkit-scrollbar {
@@ -113,27 +89,15 @@ footer a {
     display: grid;
 }
 
-footer .contact {
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .Gordon-J-Pace {
     text-align: left;
-    float: left;
-    margin-left: 50px;
-    flex: 10%;
 }
 
 .Christian-Colombo {
     text-align: right;
-    float: right;
-    margin-right: 50px;
-    flex: 10%;
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:768px) {
     li a {
         cursor: pointer;
         display: block;
@@ -146,5 +110,17 @@ footer .contact {
         font-family: "Arial";
         font-weight: bold;
         font-size: 14px;
+    }
+    .Christian-Colombo {
+        text-align: left;
+    }
+    footer h1 {
+        font-size: medium;
+    }
+    footer h2 {
+        font-size: medium;
+    }
+    footer a {
+        font-size: x-small;
     }
 }
