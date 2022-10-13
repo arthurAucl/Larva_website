@@ -25,61 +25,71 @@
         <li><a class="r" href="about_larva.html"> About Larva </a></li>
     </ul>
 
-
+    
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div id=b lock1 class="col-md-2 col-sm-12">
-                <div class="summary">
-                    <h3 class="container-fluid"> Summary </h3>
-                    <a class="first-row" href="#Installation-required" title="Installation required"> Installation required</a>
-                    <a class="second-row" href="#aspectJ" title="AspectJ"> AspectJ</a>
-                    <a class="first-row" href="#How-to-use-compiler" title="Installation required"> How to use the compiler</a>
-                    <a class="first-row" href="#Graphviz-problem" title="Graphviz problem"> Graphviz problem</a>
+    <div class = "container-fluid">
+        <div class = "row">
+            <div id = block1 class = "col-md-2 col-sm-12">
+                <div class = "summary">
+                    <h3 class ="container-fluid"> Summary </h3>
+                    <a class = "first-row" href = "#Installation-required" title = "Installation required"> Installation required</a>
+                    <a class = "second-row" href = "#aspectJ" title = "AspectJ"> AspectJ</a>
+                    <a class = "first-row" href = "#How-to-use-compiler" title = "Installation required"> How to use the compiler</a>
+                    <a class = "first-row" href = "#Graphviz-problem" title = "Graphviz problem"> Graphviz problem</a>
+                    <a class = "first-row" href = "#Example" title = "Example"> Example</a>
+
                 </div>
             </div>
-            <div id=b lock2 class="col-md-10 col-sm-12">
-                <div class="global-block">
-                    <h2 class="container-fluid" id="Tutorials"> Tutorials </h2><br><br>
-                    <h3 class="container-fluid"> Installation required </h3> <br>
-                    <div class="container-fluid" id="Installation-required">
-                        <h3 id="aspectJ"> AspectJ</h3>
-                        <p>To use the compiler, you need to install AspectJ and run your code with AspectJ. The version of AspectJ depends of your version of Java.<br> You can find all version on this site : <a href="https://www.eclipse.org/ajdt/downloads/"> AspectJ download</a>.<br><br>                            On eclipse, go to "Help", "Install new sotfware" and click on "add" and put the link of your version.<br><br>
+            <div id = block2 class = "col-md-10 col-sm-12">
+                <div class = "global-block" >
+                    <h2 class = "container-fluid" id = "Tutorials"> Tutorials </h2><br><br>
+                    <h3 class ="container-fluid"> Installation required </h3> <br>
+                    <div class="container-fluid" id = "Installation-required">
+                        <h3 id ="aspectJ"> AspectJ</h3>
+                        <p>To use the compiler, you need to install AspectJ and run your code with AspectJ. The version of AspectJ depends of your version of Java.<br>
+                            You can find all version on this site : <a href = "https://www.eclipse.org/ajdt/downloads/"> AspectJ download</a>    .<br><br>
+                            On eclipse, go to "Help", "Install new sotfware" and click on "add" and put the link of your version.<br><br>               
                         </p>
-                        <h2 class="image">
-                            <img src=aspectJ.png alt="Image" height="100%" width="100%">
+                        <h2 class = "image">
+                            <img src=aspectJ.png alt = "Image" height = "100%" width = "100%" >
                         </h2>
                         <br><br>
                     </div>
+                
 
 
-
-                    <h2 id="block"> How to use the compiler </h2>
-                    <div class="block" id="How-to-use-compiler">
-
-                        <p>To use the compiler, you need to install AspectJ and run your code with AspectJ.<br> After, go to "run configuration" : <br>
-                            <h2 class="image">
-                                <img src=compiler1.png alt="Image" height="100%" width="100%">
+                    <h2 id ="block"> How to use the compiler </h2>
+                    <div class="block" id = "How-to-use-compiler">
+    
+                        <p>To use the compiler, you need to install AspectJ and run your code with AspectJ.<br>
+                            After, go to "run configuration" :     <br>
+                            <h2 class = "image">
+                                <img src=compiler1.png alt = "Image" height = "100%" width = "100%">
                             </h2>
-                            <br> Then, you compile with AspectJ and you put your project (Larva) and the main class (compiler) : <br>
-                            <h2 class="image">
-                                <img src=compiler2.png alt="Image" height="100%" width="100%">
+                            <br>
+                            Then, you compile with AspectJ and you put your project (Larva) and the main class (compiler) : <br>
+                            <h2 class = "image">
+                                <img src=compiler2.png alt = "Image" height = "100%" width = "100%">
                             </h2>
-                            <br> Now, you have to put some arguments. Go to arguments, write the directory of the larva file you want to execute, write -v -o and to finish write the directory of your src file. <br> Then, run the compilator.<br>
-                            <h2 class="image">
-                                <img src=compiler3.png alt="Image" height="100%" width="100%">
+                            <br>
+                            Now, you have to put some arguments. Go to arguments, write the directory of the larva file you want to execute, write -v -o and to finish write the directory of your src file. <br>
+                            Then, run the compilator.<br>
+                            <h2 class = "image">
+                                <img src=compiler3.png alt = "Image" height = "100%" width = "100%">
                             </h2>
-                            <br> Normally, you need to have "Compiled successfully" in the console. <br><br>
+                            <br>
+                            Normally, you need to have "Compiled successfully" in the console. <br><br>
 
                         </p>
 
-                        <h2 id="block"> Graphviz problem </h2>
-                        <div class="block" id="Graphviz-problem">
-                            <p>It's possible that you have an error with Graphviz when you compile. <br> If you have this error, you can the following part of code in the property.java file at the line 140 (directory : Larva/src/compiler/property.java) :
-                                <br><br>
-
+                        <h2 id ="block"> Graphviz problem </h2>
+                        <div class="block" id = "Graphviz-problem">
+                            <p>It's possible that you have an error with Graphviz when you compile. <br>
+                                If you have this error, you can put the following part of code in
+                                the property.java file at the line 140 (directory : Larva/src/compiler/property.java) : <br><br>
+                                
                                 <pre>
                                 try{
                                     PrintWriter pw1 = new PrintWriter(Compiler.outputDir+"diag"+name+".txt");
@@ -96,18 +106,55 @@
                                 </pre>
                             </p>
                         </div>
+
+                        <h2 id ="block"> Example</h2>
+                        <div class = "block" id = "Example">
+                            <p> 
+                                In this part, we will show you an example with a bank system. The goal of this example is to create users, account and transactions but also to make sure that you can't have more than 6 user, 
+                                each user can't have more than 6 account and each account can't have more than 6 transactions.<br><br>
+
+                                When you will run the bank example, this is what you will have in the console  of eclipse : <br>
+
+                                <h2 class = "image">
+                                    <img src=console2.png alt = "Image" height = "100%" width = "100%">
+                                </h2><br>
+
+                                Here you can choose what you want to do. For example you can type 1 to add user or 3 to delete one user.<br>
+                                We can verify that the user are correctly created in the file "output_bank.txt" :
+
+                                <h2 class = "image">
+                                    <img src=output.png alt = "Image" height = "100%" width = "100%">
+                                </h2><br>
+
+                                In this example, it's impossible to create more than 6 users. Let's try to create 6 users : <br>
+
+                                <h2 class = "image">
+                                    <img src=error_usermax.png alt = "Image" height = "100%" width = "100%">
+                                </h2><br>
+
+                                Here, after that we create 7 users, we can see an error in the output file : "SYSTEM REACHED BAD STATE" <br>
+                                and it's written that we created too many users.<br><br>
+
+                                You can also find a video on the website that show you how to create accounts and transactions.
+
+
+                            </p>
+
+                            
+
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 
 <footer>
-    <h1>Contact details</h1>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <h1>Contact details</h1>
+            <div class="contact">
                 <div class="Gordon-J-Pace">
                     <h2>Gordon J. Pace</h2>
                     <a href="https://www.um.edu.mt/ict/cs">Department of Computer Science,</a>
@@ -118,8 +165,6 @@
                     <a>Fax: (+356) 2132 0539</a>
                     <a>E-mail: Gordon.Pace@um.edu.mt</a>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
                 <div class="Christian-Colombo">
                     <h2>Christian Colombo</h2>
                     <a href="https://www.um.edu.mt/ict/cs">Department of Computer Science,</a>
@@ -130,8 +175,6 @@
                     <a>E-mail: christian.colombo@um.edu.mt</a>
                 </div>
             </div>
-        </div>
-    </div>
     <p>&copy; 2022, Larva Tutoral.</p>
 </footer>
 

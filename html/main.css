@@ -34,6 +34,10 @@ li img {
     text-decoration: none;
 }
 
+.container {
+    margin-top: 100px;
+}
+
 .l {
     float: left;
 }
@@ -47,10 +51,13 @@ li img {
     border: none;
     background-color: white;
     align-items: center;
-    margin-top: 100px;
-    margin-right: 125px;
-    margin-left: 125px;
+    margin: 100px;
 }
+
+.repository{
+    position: center;
+}
+
 
 body::-webkit-scrollbar {
     width: 10px;
@@ -89,15 +96,27 @@ footer a {
     display: grid;
 }
 
+footer .contact {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .Gordon-J-Pace {
     text-align: left;
+    float: left;
+    margin-left: 50px;
+    flex: 10%;
 }
 
 .Christian-Colombo {
     text-align: right;
+    float: right;
+    margin-right: 50px;
+    flex: 10%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:680px) {
     li a {
         cursor: pointer;
         display: block;
@@ -110,17 +129,5 @@ footer a {
         font-family: "Arial";
         font-weight: bold;
         font-size: 14px;
-    }
-    .Christian-Colombo {
-        text-align: left;
-    }
-    footer h1 {
-        font-size: medium;
-    }
-    footer h2 {
-        font-size: medium;
-    }
-    footer a {
-        font-size: x-small;
     }
 }
