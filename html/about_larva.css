@@ -59,6 +59,10 @@ div h4 {
     margin-bottom: 0px;
 }
 
+div a {
+    color: black;
+}
+
 @media screen and (max-width:768px) {
     .summary {
         flex: 0%;
