@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link href="code_with_larva.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larva Tutorial</title>
+    <link rel="stylesheet" href="main.css">
+
+    <ul>
+        <li><img src="larva.gif" alt="Larva"></li>
+        <li><a class="l" href="index.html"> Home Page</a></li>
+        <li><a class="l" href="tutorials.html"> Tutorials </a></li>
+        <li><a class="l" href="videos.html"> Videos </a></li>
+        <li><a class="l" href="code_with_larva.html"> How to code in Larva </a></li>
+        <li><a class="r" href="about_larva.html"> About Larva </a></li>
+
+    </ul>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <div class="summary">
+                    <h3 class="container-fluid"> Summary </h3>
+                    <a class="first-row" href="#Variables" title="Variables"> Variables</a>
+                    <a class="first-row" href="#Events" title="Events"> Events</a>
+                    <a class="first-row" href="#States" title="States"> States</a>
+                    <a class="first-row" href="#Transition" title="Transition"> Transition</a>
+                    <a class="first-row" href="#Foreach" title="Foreach"> Foreach</a>
+                </div>
+            </div>
+            <div class="global-block">
+                <div class="col-md-9 col-sm-12"></div>
+                <h2> Program with Larva </h2><br>
+
+                <p> The LARVA architecture involves the following five components: </p>
+                <div class="container-fluid">
+                    (i) a system to be monitored; <br> (ii) a set of specifications written in some formal notation; <br> (iii) a stream of events extracted from the system in (i); <br> (iv)a monitoring system which receives the events and verifies them
+                    according to the specification in (ii); <br> (v) possibly a feedback loop.</p>
+                </div>
+                <p id="Variables">We will try to learn the main elements to program the (ii). <br> For example, with the "bank.lrv" file that you can find <a href="https://github.com/ccol002/larva-rv-tool/tree/master/Examples/Bank%20example%20with%20nested%20foreaches">here</a>,
+                    Variables can be declared with the VARIABLES construction in this way:</p>
+                <img class="image" src=varialble_construction_in_larva.png alt="Image" height="5%" width="15%">
+                <br><br>
+                <p id="Events">We also find the EVENTS construction that allows to define the role of the functions that we will use later. For our example, we use it this way:</p>
+                <img class="image" src=events_construction_in_larva.png alt="Image" height="10%" width="40%">
+                <br><br>
+                <p id="States">To define the different states of a state machine, we need the STATES construction. Here we build the "BAD" state that defines and calls toomany{} and baddelete{}. <br> We also have the creation of the "NORMAL" state as well as the "STARTING"
+                    state. The latter uses the start function which sends a message to the terminal. <br> Unlike the start function, the other functions are just set but do nothing. </p>
+                <img class="image" src=states_construction_in_larva.png alt="Image" height="12%" width="35%">
+                <br><br>
+                <p id="Transition">With the construction "TRANSITIONS", it is possible to determine the conditions to pass from one state to another as well as the functions to be called. <br> The label of the transition (given in square brackets) contains three backslash
+                    separated elements — the event which triggers the transition, a condition which must hold for the transition to be taken and the action to be executed when the transition is taken.
+                </p>
+                <img class="image" src=transitions_construction_in_larva.png alt="Image" height="20%" width="40%">
+                <br><br>
+                <p id="Foreach">Another defining element of Larva is the foreach construct which allows top level universal quantification in specifications in a straightforward manner.
+                </p>
+                <img class="image" src=foreach_construction_in_larva.png alt="Image" height="5%" width="20%">
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <h1>Contact details</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="Gordon-J-Pace">
+                    <h2>Gordon J. Pace</h2>
+                    <a href="https://www.um.edu.mt/ict/cs">Department of Computer Science,</a>
+                    <a href="https://www.um.edu.mt/ict">Faculty of ICT,</a>
+                    <a href="https://www.um.edu.mt">University of Malta,</a>
+                    <a>Msida MSD2080, MALTA</a>
+                    <a>Tel: (+356) 2340 2504</a>
+                    <a>Fax: (+356) 2132 0539</a>
+                    <a>E-mail: Gordon.Pace@um.edu.mt</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="Christian-Colombo">
+                    <h2>Christian Colombo</h2>
+                    <a href="https://www.um.edu.mt/ict/cs">Department of Computer Science,</a>
+                    <a href="https://www.um.edu.mt/ict">Faculty of ICT,</a>
+                    <a href="https://www.um.edu.mt">University of Malta,</a>
+                    <a>Msida MSD2080, MALTA</a>
+                    <a>Tel: (+356) 2340 2640</a>
+                    <a>E-mail: christian.colombo@um.edu.mt</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>&copy; 2022, Larva Tutoral.</p>
+</footer>

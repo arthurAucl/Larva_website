@@ -1,0 +1,39 @@
+.global-block {
+    background-color: #efeef0;
+    margin-top: 75px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    flex: 5%;
+}
+
+.block {
+    font-family: "Arial";
+    color: black;
+    text-align: left;
+    background-color: #efeef0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+    border: 4px solid #615dfa;
+    border-radius: 10px;
+}
+
+.summary {
+    margin-top: 75px;
+    background-color: #efeef0;
+    border-radius: 10px;
+    display: grid;
+}
+
+.first-row {
+    margin-left: 5px;
+    color: gray;
+    text-decoration: none;
+    padding: 5px;
+}
