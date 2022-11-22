@@ -3,12 +3,31 @@
     flex-wrap: wrap;
 }
 
+.content2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .content .video-block {
     font-family: "Arial";
     cursor: pointer;
     color: black;
     text-align: center;
-    background-color:  #efeef0;
+    background-color: #efeef0;
+    border-radius: 10px 10px 10px 10px;
+    padding: 25px;
+    flex: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 75px;
+}
+
+.content2 .video-block {
+    font-family: "Arial";
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    background-color: #efeef0;
     border-radius: 10px 10px 10px 10px;
     padding: 25px;
     flex: 5%;
